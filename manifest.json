@@ -1,0 +1,41 @@
+{
+    "manifest_version": 3,
+    "name": "ChatPoe",
+    "version": "1.0.0",
+    "description": "Let Poe having a ChatGPT-like appearence",
+    "icons": {
+        "16": "images/icon-16.png",
+        "32": "images/icon-32.png",
+        "48": "images/icon-48.png",
+        "128": "images/icon-128.png"
+    },
+    "permissions": ["activeTab"],
+    "action": {},
+    "content_scripts": [
+        {
+            "matches": [
+                "https://poe.com/*"
+            ],
+            "css": [
+                "main.css",
+                "default.min.css"
+            ],
+            "js": [
+                "highlight.min.js",
+                "content-script.js"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "images/user_icon_light.svg",
+                "images/user_icon_dark.svg"
+            ],
+            "matches": [
+                "https://poe.com/*"
+            ]
+        }      
+    ]
+}
