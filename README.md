@@ -5,12 +5,6 @@
 A Google Chrome extension that make Poe look like ChatGPT
 </div>
 
-- [ChatPoe](#chatpoe)
-  - [Screenshots](#screenshots)
-  - [How to use](#how-to-use)
-  - [License](#license)
-  - [Disclaimer](#disclaimer)
-
 This is an open-source project that changes the appearance of the [Poe](https://poe.com/) web UI to a ChatGPT-like UI.
 
 [Poe](https://poe.com/) is a chatbot application from Quora that is currently available on the web and iOS. Poe has several advantages over [ChatGPT](https://chat.openai.com/):
@@ -26,6 +20,12 @@ However, there are several disadvantages to the Poe native web UI:
 - The code styling of the Poe UI is not great and hard to read.
 
 This Chrome extension changes the message display style for better readability.
+
+- [ChatPoe](#chatpoe)
+  - [Screenshots](#screenshots)
+  - [How to use](#how-to-use)
+  - [License](#license)
+  - [Disclaimer](#disclaimer)
 
 ## Screenshots
 **Light Mode**
@@ -46,7 +46,7 @@ This extension is currently not listed in the Chrome Web Store yet. To use this 
 4. Find and select the app or extension folder.
 5. Open a new tab in Chrome -> click Apps -> click the app or extension. Make sure it loads and works correctly.
 
-## License
+## [License](LICENSE)
 This repository is licensed under the Apache License 2.0. Feel free to create something fun with this project. I would be happy if you shared with me what you have done based on this project.
 
 ## Disclaimer
