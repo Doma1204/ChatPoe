@@ -16,7 +16,7 @@ ChatPoe 1.1.0 Release
 
 - Removed `hightlight.js` for code highlighting as the new Poe frontend already has native code highlighting.
 
-## [1.0.0] - 2023-03-05
+## [1.0.0] - 2023-04-10
 ChatPoe 1.0.0 Release
 
 This is the first release of ChatPoe.
