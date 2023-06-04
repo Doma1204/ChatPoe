@@ -9,6 +9,7 @@ html body {
     --cg-bot-color: #f7f7f8;
     --cg-table-header-color: rgba(236, 236, 241, .2);
     --cg-table-border-color: #e8e8ed;
+    --chat-width: 992px;
     --bot-icon: url("/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FchatGPTAvatar.04ed8443.png&w=96&q=75");
     --human-icon: url("chrome-extension://__MSG_@@extension_id__/images/user_icon_light.svg");
     background-color: var(--cg-bg-color);
@@ -122,19 +123,51 @@ html .ChatPageNavigationLinks_navigationIcon__bpy4A {
 }
 
 /* Chat */
-html .ChatWelcomeView_welcomeContainer__jMw3P {
-    max-width: 100%;
-    margin: 0;
+html .ChatPageMain_container__1aaCT {
+    align-items: center;
+}
+
+html .BotInfoCard_sectionContainer__ag99t {
+    align-items: flex-start !important;
+
+    width: 100%;
+    max-width: var(--chat-width);
+
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+html .ChatMessage_chatWelcomeViewWrapper__EjBnZ {
+    width: 100%;
+    max-width: var(--chat-width);
+
+    margin: 0 auto;
     padding: var(--spacing-medium) var(--spacing-large);
     box-sizing: border-box;
+
     background-color: var(--cg-bg-color);
 }
-html .ChatWelcomeView_welcomeContainer__jMw3P * {
-    padding: 0;
+
+html .ChatPageRateLimitedBanner_banner__V_OX_,
+html .ChatPageRateLimitedBanner_text__pXmtm,
+html .ChatWelcomeView_welcomeButtonsContainer__hxUc1 {
+    width: 100%;
+    max-width: var(--chat-width);
+
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+html .ChatWelcomeView_welcomeContainer__jMw3P button {
+    border: solid var(--bg-gray-light);
 }
 
 html .PageWithSidebarLayout_rightSidebar__BXZDJ {
     background-color: var(--cg-bg-color);
+}
+
+html .PageWithSidebarLayout_startAtBottom__wKtfz {
+    padding: 0;
 }
 
 html .PageWithSidebarLayout_mainSection__i1yOg {
@@ -162,14 +195,27 @@ html .ChatPageMainFooter_footer__Hm4Rt {
     flex-direction: column;
     align-items: center;
 }
+html .ChatMessageInputFooter_footer__1cb8J {
+    width: 100%;
+    max-width: var(--chat-width);
+    box-sizing: border-box;
+    padding: 0 var(--spacing-medium);
+}
 
 html .ChatMessage_messageRow__7yIr2:not(:has(.Message_chatBreak__i1lg8)),
 html .ChatMessageFeedbackButtons_feedbackButtonsContainer__0Xd3I,
 html .ChatMessageSuggestedReplies_suggestedRepliesContainer__JgW12,
 html .ChatMessageInputView_inputWrapper__kKP4W {
     width: 100%;
-    max-width: 992px;
     box-sizing: border-box;
+    justify-content: center;
+}
+
+html .ChatMessageFeedbackButtons_feedbackButtonsContainer__0Xd3I,
+html .ChatMessageSuggestedReplies_suggestedRepliesContainer__JgW12,
+html .ChatMessage_messageWrapper__Zf87D:not(:has(.Message_chatBreak__i1lg8)) {
+    /* Chat Width - Dropdown Button Width(logo + padding * 2) */
+    max-width: calc(var(--chat-width) - 24px - 0.6em * 2);
 }
 
 html .ChatMessagesView_infiniteScroll__K_SeP > div:has(.Message_botMessageBubble__CPGMI) {
@@ -178,6 +224,7 @@ html .ChatMessagesView_infiniteScroll__K_SeP > div:has(.Message_botMessageBubble
 
 html .ChatMessage_messageRow__7yIr2:has(.Message_humanMessageBubble__Nld4j) {
     flex-direction: row-reverse;
+    background-color: var(--cg-bg-color);
 }
 
 html .Message_humanMessageBubble__Nld4j::before,
@@ -224,6 +271,11 @@ html .Message_humanMessageBubble__Nld4j {
     font-size: 1em;
 }
 
+html .Message_humanMessageBubble__Nld4j,
+html .Message_botMessageBubble__CPGMI {
+    max-width: var(--chat-width);
+}
+
 html .Message_humanOptimisticFooter__zm1hu {
     text-align: left !important;
 }
@@ -253,6 +305,7 @@ html .Message_expander__DG8OV {
     all: unset;
 }
 
+
 /* Chat Element */
 html code:not(pre code) {
     font-weight: 600;
@@ -261,11 +314,6 @@ html code:not(pre code) {
 html code:not(pre code)::before,
 html code:not(pre code)::after {
     content: "`";
-}
-
-html pre:not(:has(code.hljs)) {
-    padding: var(--spacing-medium);
-    background: var(--bg-gray-ultralight);
 }
 
 html code {
@@ -278,9 +326,8 @@ html table {
     border-collapse: collapse;
 }
 
-html table,
-th,
-td {
+html th,
+html td {
     border: 1px solid var(--cg-table-border-color);
     padding: .25rem .75rem;
 }

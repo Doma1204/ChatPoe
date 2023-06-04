@@ -9,15 +9,12 @@ This is an open-source project that changes the appearance of the [Poe](https://
 
 [Poe](https://poe.com/) is a chatbot application from Quora that is currently available on the web and iOS. Poe has several advantages over [ChatGPT](https://chat.openai.com/):
 
-- You can access chat models other than ChatGPT.
+- You can access chat models other than ChatGPT, or even user-created chatbot.
 - Chat generation is generally faster than ChatGPT (from my experience).
 - Free Poe users can access Poe pretty much all the time, unlike free ChatGPT, which may block you when it is at high capacity.
 - Poe is accessible in some locations that ChatGPT can't (e.g. HK).
 
-However, there are several disadvantages to the Poe native web UI:
-
-- It may be inconvenient to read a really long response in Poe as the chat bubble is narrow and you have to scroll a lot to read.
-- The code styling of the Poe UI is not great and hard to read.
+However, the Poe native web UI may be inconvenient to read a really long response in Poe as the chat bubble is narrow and you have to scroll a lot to read.
 
 This Chrome extension changes the message display style for better readability.
 
@@ -50,6 +47,6 @@ This extension is currently not listed in the Chrome Web Store yet. To use this 
 This repository is licensed under the Apache License 2.0. Feel free to create something fun with this project. I would be happy if you shared with me what you have done based on this project.
 
 ## Disclaimer
-The extension only changes the appearance of Poe and does not collect any information or chat history. In fact, except for code styling, which uses [highlight.js](https://highlightjs.org/) to change the style, all of the appearance changes are done using CSS.
+The extension only changes the appearance of Poe and does not collect any information or chat history. All appearance changes are done using CSS.
 
 This is a quick weekend project for me to learn how to make a Chrome extension. There is no plan or roadmap for this project at the moment, but you are welcome to give me any suggestions or ideas.
