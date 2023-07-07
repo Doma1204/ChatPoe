@@ -250,6 +250,7 @@ html .ChatMessage_messageWrapper__Zf87D:not(:has(.Message_chatBreak__i1lg8)) {
 
 html .ChatMessage_humanMessageWrapper__76ZSo {
     flex-direction: row-reverse;
+
 }
 
 html .ChatMessagesView_infiniteScroll__K_SeP > div:has(.Message_botMessageBubble__CPGMI) {
@@ -257,6 +258,7 @@ html .ChatMessagesView_infiniteScroll__K_SeP > div:has(.Message_botMessageBubble
 }
 
 html .ChatMessage_messageRow__7yIr2:has(.Message_humanMessageBubble__Nld4j) {
+    flex-direction: row-reverse;
     background-color: var(--cg-bg-color);
 }
 
