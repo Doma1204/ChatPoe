@@ -122,6 +122,36 @@ html .ChatPageNavigationLinks_navigationIcon__bpy4A {
     height: 28px;
 }
 
+html .ChatPageManageBotsGroup_manageBotsGroupContainer__XmcPw {
+    background-color: var(--cg-sidebar-color);
+    padding: 0;
+}
+
+html .ChatPageManageBotsGroup_manageBotsGroupNavItem__SHRRu {
+    padding: 0;
+}
+
+html .ChatPageManageBotsGroup_labelIcon__nPloE {
+    width: var(--icon-medium) !important;
+    height: var(--icon-medium) !important;
+}
+
+html .ChatPageManageBotsGroup_manageBotsGroupItem_poeImproveBotDiscoverability__xEMhz:hover {
+    background-image: var(--cg-sidebar-hover-color);
+}
+
+html .ChatPageManageBotsGroup_manageBotsGroupContainer__XmcPw {
+    flex-direction: column;
+    gap: var(--spacing-small);
+    padding: 0;
+}
+
+html .ChatPageManageBotsGroup_manageBotsGroupItem_poeImproveBotDiscoverability__xEMhz {
+    flex-direction: row;
+    gap: var(--spacing-medium);
+    background-color: transparent;
+}
+
 /* Chat */
 html .ChatPageMain_container__1aaCT {
     align-items: center;
@@ -216,6 +246,11 @@ html .ChatMessageSuggestedReplies_suggestedRepliesContainer__JgW12,
 html .ChatMessage_messageWrapper__Zf87D:not(:has(.Message_chatBreak__i1lg8)) {
     /* Chat Width - Dropdown Button Width(logo + padding * 2) */
     max-width: calc(var(--chat-width) - 24px - 0.6em * 2);
+}
+
+html .ChatMessage_humanMessageWrapper__76ZSo {
+    flex-direction: row-reverse;
+
 }
 
 html .ChatMessagesView_infiniteScroll__K_SeP > div:has(.Message_botMessageBubble__CPGMI) {

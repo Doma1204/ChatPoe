@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2023-07-07
+ChatPoe 1.1.1 Release
+
+### Added
+
+- Added the styling of the new bot managing buttons (`Explore` and `Create bot`)
+
+### Fixed
+
+- Fixed the updated style of human message
+
 ## [1.1.0] - 2023-06-04
 ChatPoe 1.1.0 Release
 
@@ -25,5 +36,6 @@ ChatPoe has the following feature now:
 - ChatGPT-like UI
 - Highlight the code block for readablilty
 
+[1.2.0]: https://github.com/Doma1204/ChatPoe/compare/1.1.0...1.2.0
 [1.1.0]: https://github.com/Doma1204/ChatPoe/compare/1.0.0...1.1.0
 [1.0.0]: https://github.com/Doma1204/ChatPoe/releases/tag/1.0.0
